@@ -1,7 +1,7 @@
 header{ 
     display: flex;
     height:60px;
-    background-image: url(../Mark1/img/HeaderBackground.png);
+    background-image: url(Mark1/img/HeaderBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
