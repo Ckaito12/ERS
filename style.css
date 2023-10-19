@@ -1,0 +1,130 @@
+header{ 
+    display: flex;
+    height:60px;
+    background-image: url(../Mark1/img/HeaderBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo{
+    flex-basis: 4%;
+    width: 50px;
+    height: 56px;
+}
+
+#nombre{
+    padding: 5px;
+    flex-basis: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Rowdies';
+    color: rgb(169, 9, 97);
+}
+
+#barra{  
+    padding: 20px;   
+    flex-basis: 70%;
+    text-align: end;
+}
+
+#ilustraciones{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+
+}
+
+.ilustracion{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+#contenidoprincipal{
+    display: flex;
+    border: 2px solid black;
+    height: 500px;
+}
+
+aside{
+    flex-basis: 20%;
+    border: 2px solid black;
+}
+
+main{
+    flex-basis: 60%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    border: 2px solid black;
+}
+
+#contacto{
+    flex-basis: 20%;
+}
+
+#InfoNosotros{
+    flex-basis: 40%;
+    border: 2px solid black;
+}
+
+#redes{
+    flex-basis: 40%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LogoRed{
+    width: 60px;
+    height: 50px;
+}
+
+body{
+    background-color: rgb(168, 234, 255);
+}
+
+#introduccion{
+    display: flex;
+    justify-content: center;
+    font-family: 'Rowdies';
+    color: rgb(169, 9, 97);
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+
+    header{ 
+        display: flex;
+        width: 360px;
+        height:30px;
+        background-image: url(../Mark1/img/HeaderBackground.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #logo{
+        width: 1px;
+        height: 1px;
+    }
+
+    #nombre{
+        padding: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: 'Rowdies';
+        color: rgb(169, 9, 97);
+        font-size: 8px;
+    }
+
+}
+
