@@ -229,7 +229,7 @@ body{
 
     #barra{
         flex-basis: 55%;
-        font-size: 9px;
+        font-size: 8px;
         padding-top: 25px;
         padding-left: 10px;
         padding-right: 0px;
@@ -237,14 +237,21 @@ body{
     }
 
     #introduccion{
-        font-size: 9px;
+        font-size: 7px;
     }
 
     
     .ilustracion{
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
     }
 
+    body{
+        width: 360px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
 }
 
