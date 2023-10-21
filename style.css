@@ -199,7 +199,7 @@ body{
     #barra{
         padding-top: 23px;
         display: flex;
-        font-size: 20px;
+        font-size: 13px;
     }
 
     #listaDeIlustraciones{
@@ -223,20 +223,22 @@ body{
     }
 
     #nombre{
-        font-size: 9px;
-        flex-basis: 41%;
+        font-size: 8px;
+        flex-basis: 70%;
         padding: 0px;
         align-items: center;
     }
 
     #barra{
-        flex-basis: 70%;
+        flex-basis: 65%;
         font-size: 11px;
+        display: flex;
         padding-top: 21px;
         padding-left: 0px;
         padding-right: 0px;
         align-items: center;
         text-align: left;
+        flex-direction: column-reverse;
     }
 
     #introduccion{
