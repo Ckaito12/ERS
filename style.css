@@ -1,7 +1,7 @@
 header{ 
     display: flex;
     height:60px;
-    background-image: url(../Mark1/img/HeaderBackground.png);
+    background-image: url(./img/HeaderBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -98,3 +98,4 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
