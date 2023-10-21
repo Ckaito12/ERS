@@ -1,12 +1,15 @@
 header{ 
     display: flex;
     height:60px;
+    width: 100%;
     background-image: url(./img/HeaderBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
-#logo{
+.logo{
     flex-basis: 4%;
     width: 50px;
     height: 56px;
@@ -29,17 +32,33 @@ header{
     text-align: end;
 }
 
-#ilustraciones{
-    display: flex;
-    justify-content: space-around;
-    flex-basis: 100%;
+a{
+    font-family: 'Rowdies';
+    text-decoration: none;
+    color: rgb(169, 9, 97);
+}
 
+a:visited{
+    font-family: 'Rowdies';
+    color: rgb(169, 9, 97);
+}
+
+#ilustraciones{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(168, 234, 255);
+    border-radius: 10px;
 }
 
 .ilustracion{
-    border: 2px solid black;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+}
+
+.boton{
+    background-color: rgb(255, 136, 167);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 #contenidoprincipal{
@@ -49,17 +68,23 @@ header{
 }
 
 aside{
+    margin: 5px;
+    padding: 5px;
     flex-basis: 20%;
     border: 2px solid black;
 }
 
 main{
+    margin: 5px;
+    padding: 5px;
     flex-basis: 60%;
     border: 2px solid black;
     text-align: center;
 }
 
 footer{
+    margin: 10px;
+    padding: 10px;
     display: flex;
     border: 2px solid black;
 }
@@ -69,33 +94,113 @@ footer{
 }
 
 #InfoNosotros{
-    flex-basis: 40%;
+    flex-basis: 60%;
     border: 2px solid black;
 }
 
 #redes{
-    flex-basis: 40%;
+    flex-basis: 20%;
     border: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#linkRedes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .LogoRed{
-    width: 60px;
-    height: 50px;
+    width: 30px;
+    height: 25px;
 }
 
 body{
-    background-color: rgb(168, 234, 255);
+    background-color: rgb(90, 234, 255);
+    margin: 0;
+    padding: 0;
 }
 
 #introduccion{
+    margin: 10px;
     display: flex;
     justify-content: center;
     font-family: 'Rowdies';
     color: rgb(169, 9, 97);
     flex-direction: column;
     align-items: center;
+    background-color: rgb(168, 234, 255);
+    margin: 0;
+    padding: 0;
 }
+
+#contenedorDeLaLista{
+    display: flex;
+}
+
+#listaDeIlustraciones{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Rowdies';
+    color: rgb(169, 9, 97);
+}
+
+@media (max-width:1024px){
+    #nombre {
+        font-size: 11px;
+        flex-basis: 30%;
+    }
+}
+
+@media (max-width:768px){
+    #nombre {
+        font-size: 11px;
+        flex-basis: 40%;
+    }
+
+    #barra{  
+        font-size: 15px;
+        padding: 20px;   
+        flex-basis: 60%;
+        text-align: end;
+    }
+
+    #introduccion{
+        font-size: 11px;
+    }
+
+    .boton{
+        margin: 2px;
+    }
+}
+
+@media (max-width:600px){
+
+    #nombre{
+        font-size: 8px;
+        flex-basis: 40%;
+    }
+
+    #barra{
+        display: flex;
+        font-size: 12px;
+    }
+
+    #listaDeIlustraciones{
+        padding: 0;
+    }
+
+    .ilustracion{
+        height: 125px;
+        width: 125px;
+    }
+
+}
+
+@media
 

@@ -12,8 +12,8 @@
 <body>
 
     <header>
-        <div id="logo">
-            <img src="./img/desarrollowebimg.png" alt="logo">
+        <div class="logo">
+            <img class="logo" src="./img/desarrollowebimg.png" alt="logo">
         </div>
         <div id="nombre">
             <h1>El rincón de la seño</h1>
@@ -24,20 +24,47 @@
                 <a href="">Subpagina</a>
                 <a href="">Subpagina</a>
                 <a href="">Subpagina</a>
-                <a href="">Subpagina</a>
             </nav>
         </div>
     </header>
 
     <section id="introduccion">
         <h2>Planificaciones y recursos para las maestras de nivel inicial</h2>
-        <p>Areas:</p>
     </section>
 
     <section id="ilustraciones">
-        <img class="ilustracion" src="./img/csslogo.png" alt="Una Imagen">
-        <img class="ilustracion" src="./img/jslogo.png" alt="Una Imagen"> 
-        <img class="ilustracion"  src="./img/logo.png" alt="Una Imagen">
+        
+        <div id="introduccion">
+            <h2>Areas</h2>
+        </div>
+
+        <div id="contenedorDeLaLista">
+            <ul id="listaDeIlustraciones">
+
+                <li class="boton">
+                    <a href="">
+                        <img class="ilustracion" src="./img/mateinicial.JPG" alt="Una Imagen">
+                        <p>Matematicas</p>
+                    </a>
+                </li>
+
+                <li class="boton">
+                    <a href="">
+                        <img class="ilustracion" src="./img/lenguainicial.jpg" alt="Una Imagen">
+                        <p>Lengua</p>
+                    </a>
+                </li>
+
+                <li class="boton">
+                    <a href="">
+                        <img class="ilustracion"  src="./img/arteinicial.jpg" alt="Una Imagen">
+                        <p>Arte</p>
+                    </a>
+                </li>
+            </div>
+
+        </ul>
+
     </section>
 
     <section id="contenidoprincipal">
@@ -93,7 +120,7 @@
         </div>
 
         <div id="InfoNosotros">
-            <h2>Sobre Nosotros:</h2>
+            <h3>Sobre Nosotros:</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Qui in molestiae facere veritatis sequi dolores alias, 
@@ -104,11 +131,12 @@
         </div>
 
         <div id="redes">
-            <h2>Nuestras Redes:</h2>
-            <nav>
-                <a class="NombreDeLaRed" href=""><img class="LogoRed" src="../Mark1/img/InstagramLogo.png" alt="Logo Instagram">Facebook</a>
-                <a class="NombreDeLaRed" href=""><img class="LogoRed" src="../Mark1/img/FacebookLogo.png" alt="Logo Facebook">Instagram</a>
-            </nav>
+            <h3>Nuestras Redes:</h3>
+                <nav id="linkRedes">
+                    <a class="NombreDeLaRed" href=""><img class="LogoRed" src="../Mark1/img/InstagramLogo.png" alt="Logo Instagram">Instagram</a>
+                    <br>
+                    <a class="NombreDeLaRed" href=""><img class="LogoRed" src="../Mark1/img/FacebookLogo.png" alt="Logo Facebook">Facebook</a>
+                </nav>
         </div>
 
     </footer>
