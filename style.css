@@ -223,7 +223,7 @@ body{
     }
 
     #nombre{
-        font-size: 6px;
+        font-size: 10px;
         flex-basis: 41%;
         padding: 0px;
         align-items: center;
@@ -231,7 +231,7 @@ body{
 
     #barra{
         flex-basis: 70%;
-        font-size: 15px;
+        font-size: 13px;
         padding-top: 21px;
         padding-left: 0px;
         padding-right: 0px;
