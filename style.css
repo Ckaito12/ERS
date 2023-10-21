@@ -66,6 +66,7 @@ a:visited{
     display: flex;
     border: 2px solid black;
     height: 500px;
+    justify-content: space-evenly;
 }
 
 aside{
@@ -151,7 +152,7 @@ body{
     color: rgb(169, 9, 97);
 }
 
-@media (max-width:1024px){
+@media (max-width:1200px){
     #nombre {
         font-size: 11px;
         flex-basis: 30%;
@@ -211,7 +212,7 @@ body{
 
 }
 
-@media (max-width:360px){
+@media (max-width:480px){
 
     .logo{
         padding-top: 3px;
@@ -246,12 +247,10 @@ body{
         width: 90px;
     }
 
-    body{
-        width: 360px;
-    }
 
     footer{
         flex-direction: column;
     }
+
 }
 
