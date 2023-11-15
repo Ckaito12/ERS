@@ -9,6 +9,7 @@ header{
     padding: 0;
 }
 
+
 .logo{
     padding-top: 2px;
     flex-basis: 4%;
@@ -17,8 +18,9 @@ header{
 }
 
 #nombre{
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
-    flex-basis: 26%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,16 +29,28 @@ header{
     color: rgb(169, 9, 97);
 }
 
-#barra{  
-    padding: 20px;   
-    flex-basis: 70%;
-    text-align: end;
+#botonModoOscuro{  
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+    margin-left: 93%;
+    position: absolute;
+    border-radius: 5px;
+    border-color: black;
+    background-color: grey;
+    cursor: pointer;
 }
+
 
 a{
     font-family: 'Rowdies';
     text-decoration: none;
     color: rgb(169, 9, 97);
+    background-color: transparent;
+}
+
+li{
+    list-style: none;
 }
 
 a:visited{
@@ -60,29 +74,50 @@ a:visited{
     background-color: rgb(255, 136, 167);
     border-radius: 10px;
     overflow: hidden;
+    margin-right: 40px;
 }
+
 
 #contenidoprincipal{
     display: flex;
-    height: 500px;
     justify-content: space-evenly;
 }
 
-aside{
-    background-color: rgb(168, 234, 255);
-    margin: 3px;
-    padding: 3px;
-    flex-basis: 20%;
-    border-radius: 10px;
+h3, h2, p{
+    font-family: 'Rowdies';
+    color: rgb(169, 9, 97);
+}
+
+.ContenedorListaContenidoPrincipal{
+    display: flex;
+    flex-direction: column;
+}
+
+.listaContenidoPrincipal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ItemListaContP{
+  padding-right: 40px;
+}
+
+.MesDelAño {
+    padding-top: 5px;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
 }
 
 main{
     background-color: rgb(168, 234, 255);
-    margin: 3px;
-    padding: 3px;
-    flex-basis: 60%;
+    margin: 0px;
+    flex-basis: 100%;
     text-align: center;
-    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
 footer{
@@ -99,11 +134,20 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Rowdies';
+    color: rgb(169, 9, 97);
+    border-radius: 5px;
+    border-color: rgb(169, 9, 97);;
+}
+
+.partesDelFormulario{
+    font-size: 12px;
 }
 
 #InfoNosotros{
     flex-basis: 60%;
     text-align: center;
+    padding: 5px;
 }
 
 #redes{
@@ -147,6 +191,7 @@ body{
     display: flex;
 }
 
+
 #listaDeIlustraciones{
     display: flex;
     justify-content: space-around;
@@ -160,14 +205,13 @@ body{
 @media (max-width:1200px){
     #nombre {
         font-size: 11px;
-        flex-basis: 30%;
     }
 }
 
 @media (max-width:768px){
+
     #nombre {
         font-size: 11px;
-        flex-basis: 40%;
     }
 
     #barra{  
@@ -195,10 +239,8 @@ body{
         height: 45px;
     }
 
-
     #nombre{
         font-size: 8px;
-        flex-basis: 40%;
     }
 
     #barra{
@@ -229,7 +271,6 @@ body{
 
     #nombre{
         font-size: 8px;
-        flex-basis: 70%;
         padding: 0px;
         align-items: center;
     }
@@ -259,6 +300,10 @@ body{
 
     footer{
         flex-direction: column;
+    }
+
+    main {
+        flex-direction: column
     }
 
 }

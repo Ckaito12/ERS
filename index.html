@@ -1,8 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>El rincon de la seño</title>
 
     <link rel="stylesheet" href="style.css">
@@ -12,22 +16,31 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
+
 <body>
 
     <header>
+
         <div class="logo">
             <img class="logo" src="./img/desarrollowebimg.png" alt="logo">
         </div>
         <div id="nombre">
             <h1>El rincón de la seño</h1>
         </div>
-        <div id="barra">
-            <nav>
-                <a href="">Inicio</a>
-                <a href="">Subpagina</a>
-                <a href="">Subpagina</a>
-            </nav>
-        </div>
+
+        <button id="botonModoOscuro" onclick="modoOscuro()">
+
+            <svg id="iconoLuna" xmlns="http://www.w3.org/2000/svg" width="7" height="10" fill="currentColor" id="bi-moon" viewBox="0 0 16 16" style="position:relative; right: 1px;">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+            </svg>
+
+            <svg id="iconoSol" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16" style="display: none; position:relative; right: 3px;">
+                <path d="M8 4.5a7 7 0 0 0-7 7 .5.5 0 0 1-1 0 8 8 0 1 1 16 0 .5.5 0 0 1-1 0 7 7 0 0 0-7-7zm0 2a5 5 0 0 0-5 5 .5.5 0 0 1-1 0 6 6 0 1 1 12 0 .5.5 0 0 1-1 0 5 5 0 0 0-5-5zm0 2a3 3 0 0 0-3 3 .5.5 0 0 1-1 0 4 4 0 1 1 8 0 .5.5 0 0 1-1 0 3 3 0 0 0-3-3zm0 2a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 4 0 .5.5 0 0 1-1 0 1 1 0 0 0-1-1z"/>
+            </svg>
+
+        </button>
+
+       
     </header>
 
     <section id="introduccion">
@@ -41,28 +54,30 @@
         </div>
 
         <div id="contenedorDeLaLista">
+
             <ul id="listaDeIlustraciones">
 
                 <li class="boton">
                     <a href="">
                         <img class="ilustracion" src="./img/mateinicial.JPG" alt="Una Imagen">
-                        <p>Matematicas</p>
+                        <p class="nombreDelBoton">Matematicas</p>
                     </a>
                 </li>
 
                 <li class="boton">
                     <a href="">
                         <img class="ilustracion" src="./img/lenguainicial.jpg" alt="Una Imagen">
-                        <p>Lengua</p>
+                        <p class="nombreDelBoton">Lengua</p>
                     </a>
                 </li>
 
                 <li class="boton">
                     <a href="">
                         <img class="ilustracion"  src="./img/arteinicial.jpg" alt="Una Imagen">
-                        <p>Arte</p>
+                        <p class="nombreDelBoton">Arte</p>
                     </a>
                 </li>
+
             </div>
 
         </ul>
@@ -70,28 +85,61 @@
     </section>
 
     <section id="contenidoprincipal">
-        <aside>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Tenetur vitae delectus odit, reprehenderit, doloremque corporis non quae dolor, 
-                eum ab magni impedit? Nulla aut facilis reprehenderit corporis saepe, distinctio 
-                blanditiis. 
-        </aside>
+        
         <main>
-            <h2>Contenido Principal</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Modi eaque, quo vero numquam minus cum cupiditate, illum recusandae corporis suscipit consectetur,
-            </p>
+            
+            <div class="ContenedorListaContenidoPrincipal">
+
+                    <h2 >Efemérides</h2>
+
+                    <ul class="listaContenidoPrincipal">
+                        <li class="ItemListaContP"><a href="">Enero</a></li>
+                        <li class="ItemListaContP"><a href="">Febrero</a></li>
+                        <li class="ItemListaContP"><a href="">Marzo</a></li>
+                        <li class="ItemListaContP"><a href="">Abril</a></li>
+                        <li class="ItemListaContP"><a href="">Mayo</a></li>
+                        <li class="ItemListaContP"><a href="">Junio</a></li>
+                        <li class="ItemListaContP"><a href="">Julio</a></li>
+                        <li class="ItemListaContP"><a href="">Agosto</a></li>
+                        <li class="ItemListaContP"><a href="">Septiembre</a></li>
+                        <li class="ItemListaContP"><a href="">Octubre</a></li>
+                        <li class="ItemListaContP"><a href="">Noviembre</a></li>
+                        <li class="ItemListaContP"><a href="">Diciembre</a></li>
+                    </ul>
+
+            </div>
+
+            <div class="ContenedorListaContenidoPrincipal">
+
+                <h2>Canciones</h2>
+
+                <ul class="listaContenidoPrincipal">
+                    <li class="ItemListaContP"> <a href="">Canciones de bienvenida</a></li>
+                    <li class="ItemListaContP"> <a href="">Canciones de animales</a></li>
+                    <li class="ItemListaContP"> <a href="">Canciones para jugar</a></li>
+                    <li class="ItemListaContP"> <a href="">Canciones para contar</a></li>
+                    <li class="ItemListaContP"> <a href="">Canciones de ronda</a></li>
+                    <li class="ItemListaContP"> <a href="">Canciones estrategicas</a></li>
+                </ul>
+
+            </div>
+
+            <div class="ContenedorListaContenidoPrincipal">
+
+                <h2>Descargables</h2>
+
+                <ul class="listaContenidoPrincipal">
+                    <li class="ItemListaContP"><a href="">Calendario</a></li>
+                    <li class="ItemListaContP"><a href="">Informes</a></li>
+                    <li class="ItemListaContP"><a href="">Evaluacion</a></li>
+                    <li class="ItemListaContP"><a href="">Diplomas</a></li>
+                    <li class="ItemListaContP"><a href="">Carteleras</a></li>
+                </ul>
+
+            </div>
+
         </main>
-        <aside>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Tenetur vitae delectus odit, reprehenderit, doloremque corporis non quae dolor, 
-                eum ab magni impedit? Nulla aut facilis reprehenderit corporis saepe, distinctio 
-                blanditiis. 
-            </p>
-        </aside>
+
     </section>
 
     <footer>
@@ -99,20 +147,35 @@
         <div class="contacto">
             <form action="">
                 <fieldset class="contacto">
+
                     <legend>Contactanos!</legend>
-                    <label for="nombre">Nombre:</label>
-                    <br>
-                    <input type="text" name="nombre" id="nombre">
-                    <br>
-                    <label for="correo">Correo Electronico:</label>
-                    <br>
-                    <input type="email" name="correo" id="correo">
-                    <br>
-                    <label for="mensaje">Dejanos un mensaje:</label>
-                    <br>
-                    <textarea name="mensaje" id="" cols="" rows=""></textarea>
-                    <br>
-                    <input type="submit">
+
+                        <div class="partesDelFormulario">
+                            <label for="name">Nombre:</label>
+                            <br>
+                            <input type="text" name="name" id="name">
+                        </div>
+
+                        <br>
+
+                        <div class="partesDelFormulario">
+                            <label for="correo">Correo Electronico:</label>
+                            <br>
+                            <input type="email" name="correo" id="correo">
+                        </div>
+
+                        <br>
+                        
+                        <div class="partesDelFormulario">
+                            <label for="mensaje">Dejanos un mensaje:</label>
+                            <br>
+                            <textarea name="mensaje" id="" cols="" rows=""></textarea>
+                        </div>
+
+                        <br>
+
+                        <input type="submit" onclick="alert('Gracias por su mensaje! Le responderemos a la brevedad')">
+
                 </fieldset>
             </form>
         </div>
@@ -120,8 +183,9 @@
         <div id="InfoNosotros">
             <h3>Sobre Nosotros:</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Qui in molestiae facere veritatis sequi dolores alias, 
+                Bienvenidos al rincon de la seño, aqui encontraras planificaciones, recursos didacticos, recortes descargables y mucho mas.
+                Pensado para nivel inicial.
+                Utilizamos el diseño curricular actual de Argentina.
             </p>
         </div>
 
