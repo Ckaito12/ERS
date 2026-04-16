@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte - El rincón de la seño</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo" src="./img/desarrollowebimg.png" alt="logo">
+        </div>
+        <div id="nombre">
+            <h1>El rincón de la seño</h1>
+        </div>
+        <button id="botonModoOscuro" onclick="modoOscuro()">
+            <svg id="iconoLuna" xmlns="http://www.w3.org/2000/svg" width="7" height="10" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+            </svg>
+            <svg id="iconoSol" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16" style="display: none;">
+                <path d="M8 4.5a7 7 0 0 0-7 7 .5.5 0 0 1-1 0 8 8 0 1 1 16 0 .5.5 0 0 1-1 0 7 7 0 0 0-7-7zm0 2a5 5 0 0 0-5 5 .5.5 0 0 1-1 0 6 6 0 1 1 12 0 .5.5 0 0 1-1 0 5 5 0 0 0-5-5zm0 2a3 3 0 0 0-3 3 .5.5 0 0 1-1 0 4 4 0 1 1 8 0 .5.5 0 0 1-1 0 3 3 0 0 0-3-3zm0 2a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 4 0 .5.5 0 0 1-1 0 1 1 0 0 0-1-1z"/>
+            </svg>
+        </button>
+    </header>
+
+    <section id="introduccion">
+        <h2>Recursos para Arte en Nivel Inicial</h2>
+        <p>Aquí encontrarás planificaciones, técnicas artísticas y actividades creativas adaptadas al diseño curricular de Argentina.</p>
+    </section>
+
+    <section id="contenidoprincipal">
+        <main>
+            <div class="ContenedorListaContenidoPrincipal">
+                <h2>Planificaciones</h2>
+                <ul class="listaContenidoPrincipal">
+                    <li class="ItemListaContP"><a href="">Dibujo y Pintura</a></li>
+                    <li class="ItemListaContP"><a href="">Modelado</a></li>
+                    <li class="ItemListaContP"><a href="">Música y Movimiento</a></li>
+                    <li class="ItemListaContP"><a href="">Teatro</a></li>
+                </ul>
+            </div>
+
+            <div class="ContenedorListaContenidoPrincipal">
+                <h2>Técnicas Artísticas</h2>
+                <ul class="listaContenidoPrincipal">
+                    <li class="ItemListaContP"><a href="">Pintura con Dedos</a></li>
+                    <li class="ItemListaContP"><a href="">Collage</a></li>
+                    <li class="ItemListaContP"><a href="">Impresión</a></li>
+                </ul>
+            </div>
+
+            <div class="ContenedorListaContenidoPrincipal">
+                <h2>Descargables</h2>
+                <ul class="listaContenidoPrincipal">
+                    <li class="ItemListaContP"><a href="">Plantillas de Dibujo</a></li>
+                    <li class="ItemListaContP"><a href="">Fichas de Música</a></li>
+                    <li class="ItemListaContP"><a href="">Guiones de Teatro</a></li>
+                </ul>
+            </div>
+        </main>
+    </section>
+
+    <footer>
+        <div class="contacto">
+            <form action="">
+                <fieldset class="contacto">
+                    <legend>Contactanos!</legend>
+                    <div class="partesDelFormulario">
+                        <label for="name">Nombre:</label>
+                        <br>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <br>
+                    <div class="partesDelFormulario">
+                        <label for="correo">Correo Electronico:</label>
+                        <br>
+                        <input type="email" name="correo" id="correo">
+                    </div>
+                    <br>
+                    <div class="partesDelFormulario">
+                        <label for="mensaje">Dejanos un mensaje:</label>
+                        <br>
+                        <textarea name="mensaje" id="" cols="" rows=""></textarea>
+                    </div>
+                    <br>
+                    <input type="submit" onclick="alert('Gracias por su mensaje! Le responderemos a la brevedad')">
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="InfoNosotros">
+            <h3>Sobre Nosotros:</h3>
+            <p>
+                Bienvenidos al rincon de la seño, aqui encontraras planificaciones, recursos didacticos, recortes descargables y mucho mas.
+                Pensado para nivel inicial.
+                Utilizamos el diseño curricular actual de Argentina.
+            </p>
+        </div>
+
+        <div id="redes">
+            <h3>Nuestras Redes:</h3>
+            <nav id="linkRedes">
+                <a class="NombreDeLaRed" href=""><img class="LogoRed" src="./img/InstagramLogo.png" alt="Logo Instagram">Instagram</a>
+                <br>
+                <a class="NombreDeLaRed" href=""><img class="LogoRed" src="./img/FacebookLogo.png" alt="Logo Facebook">Facebook</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

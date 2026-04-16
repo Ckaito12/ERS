@@ -1,12 +1,16 @@
-header{ 
+﻿header{ 
     display: flex;
-    height:60px;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60px;
     width: 100%;
     background-image: url(./img/HeaderBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
+    position: relative;
+    gap: 15px;
 }
 
 
@@ -18,29 +22,38 @@ header{
 }
 
 #nombre{
-    margin-left: auto;
-    margin-right: auto;
+    flex: 1;
     padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     font-family: 'Rowdies';
     color: rgb(169, 9, 97);
 }
 
 #botonModoOscuro{  
+    position: relative;
+    margin-left: auto;
+    margin-right: 15px;
     height: 20px;
     width: 20px;
-    margin-top: 20px;
-    margin-left: 93%;
-    position: absolute;
     border-radius: 5px;
-    border-color: black;
+    border: 1px solid black;
     background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    z-index: 2;
+    line-height: 0;
 }
 
+#botonModoOscuro svg{
+    width: 12px;
+    height: 12px;
+    display: block;
+}
 
 a{
     font-family: 'Rowdies';
@@ -66,15 +79,40 @@ a:visited{
 }
 
 .ilustracion{
-    height: 150px;
-    width: 150px;
+    width: 100%;
+    height: auto;
 }
 
 .boton{
     background-color: rgb(255, 136, 167);
     border-radius: 10px;
     overflow: hidden;
-    margin-right: 40px;
+    margin: 10px;
+    position: relative;
+    flex: 0 1 150px;
+    width: 150px;
+}
+
+.boton .ilustracion{
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.boton .nombreDelBoton{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 10px 5px;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    z-index: 1;
 }
 
 
@@ -189,17 +227,77 @@ body{
 
 #contenedorDeLaLista{
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
 }
 
+.subintroduccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
 #listaDeIlustraciones{
     display: flex;
-    justify-content: space-around;
-    flex-basis: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: auto;
+    margin: 0 auto;
+    padding: 15px 0;
+    box-sizing: border-box;
     text-align: center;
     list-style-type: none;
     font-family: 'Rowdies';
     color: rgb(169, 9, 97);
+}
+
+body.dark-mode{
+    background-color: #121212;
+    color: #e8e8e8;
+}
+
+body.dark-mode header{
+    background-image: url('./img/HeaderBackgroundModoOscuro.png');
+}
+
+body.dark-mode #ilustraciones,
+body.dark-mode main,
+body.dark-mode footer,
+body.dark-mode #introduccion{
+    background-color: #1a1a1a;
+}
+
+body.dark-mode fieldset{
+    border-color: #e8e8e8;
+}
+
+body.dark-mode .boton{
+    background-color: #1a1a1a;
+}
+
+body.dark-mode a,
+body.dark-mode a:visited,
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode li,
+body.dark-mode label,
+body.dark-mode legend{
+    color: #e8e8e8;
+}
+
+body.dark-mode #botonModoOscuro{
+    border-color: rgb(169, 9, 97);
+    background-color: rgb(255, 136, 167);
+}
+
+body.dark-mode .boton .nombreDelBoton{
+    background: rgba(0, 0, 0, 0.55);
 }
 
 @media (max-width:1200px){
@@ -223,10 +321,6 @@ body{
 
     #introduccion{
         font-size: 11px;
-    }
-
-    .boton{
-        margin: 2px;
     }
 }
 
@@ -253,11 +347,14 @@ body{
         padding: 0;
     }
 
-    .ilustracion{
-        height: 125px;
-        width: 125px;
+    .boton{
+        max-width: 100%;
+        flex: 1 1 100%;
     }
-
+    .ilustracion{
+        height: 180px;
+        width: 100%;
+    }
 }
 
 @media (max-width:480px){
@@ -293,8 +390,8 @@ body{
 
     
     .ilustracion{
-        height: 90px;
-        width: 90px;
+        height: 150px;
+        width: 100%;
     }
 
 
@@ -307,4 +404,3 @@ body{
     }
 
 }
-
