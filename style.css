@@ -385,7 +385,11 @@ body.dark-mode .boton .nombreDelBoton{
     }
 
     #introduccion{
-        font-size: 7px;
+        text-align: center;
+    }
+
+    #parrafoIntroductivo{
+        font-size: 15px;
     }
 
     
