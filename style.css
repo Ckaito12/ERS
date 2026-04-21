@@ -320,8 +320,13 @@ body.dark-mode .boton .nombreDelBoton{
     }
 
     #introduccion{
-        font-size: 11px;
+        text-align: center;
     }
+
+        #parrafoIntroductivo{
+        font-size: 15px;
+    }
+
 }
 
 @media (max-width:600px){
@@ -386,10 +391,6 @@ body.dark-mode .boton .nombreDelBoton{
 
     #introduccion{
         text-align: center;
-    }
-
-    #parrafoIntroductivo{
-        font-size: 15px;
     }
 
     
